@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.example.wan_android.ui.view.home.HomeFragment"
+              android:label="home_fragment"
+              tools:layout="@layout/home_fragment"/>
+    <action android:id="@+id/action_global_homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/homeFragment"/>
+
+    <fragment android:id="@+id/knowledgeFragment"
+              android:name="com.example.wan_android.ui.view.knowledge.KnowledgeFragment"
+              android:label="knowledge_fragment"
+              tools:layout="@layout/knowledge_detail_fragment"/>
+
+    <action android:id="@+id/action_global_knowledgeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/knowledgeFragment"/>
+    <fragment android:id="@+id/knowledgeDetailFragment"
+              android:name="com.example.wan_android.ui.view.knowledge.KnowledgeDetailFragment"
+              android:label="knowledge_detail_fragment" tools:layout="@layout/knowledge_detail_fragment"/>
+    <action android:id="@+id/action_global_knowledgeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/knowledgeDetailFragment"/>
+    <fragment android:id="@+id/h5Fragment" android:name="com.example.wan_android.ui.view.h5.H5Fragment"
+              android:label="fragment_h5" tools:layout="@layout/fragment_h5"/>
+    <action android:id="@+id/action_global_h5Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/h5Fragment"/>
+
+</navigation>
